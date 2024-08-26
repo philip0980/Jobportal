@@ -1,0 +1,59 @@
+.container {
+  /* max-width: 800px; */
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  height: calc(100vh - 8vh - 100px);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  font-family: sans-serif;
+  text-decoration: underline;
+}
+
+.errorMessage {
+  color: red;
+  text-align: center;
+}
+
+.noData {
+  text-align: center;
+  color: #555;
+}
+
+.companyList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+}
+
+.companyCard {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  width: 200px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.companyCard img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.companyCard h4 {
+  margin: 0;
+  color: #333;
+}
+
+.noLogo {
+  color: #999;
+}

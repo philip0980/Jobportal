@@ -1,0 +1,116 @@
+/* Navbar.css */
+
+.nav_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav_container h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.nav_container ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav_container ul li {
+  margin: 0;
+}
+
+.nav_container a {
+  text-decoration: none;
+  color: #007bff;
+  transition: color 0.3s ease;
+}
+
+.nav_container a:hover {
+  color: #0056b3;
+}
+
+.nav_container button {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.nav_container button:hover {
+  background-color: #0056b3;
+}
+
+.nav_container h2 {
+  margin: 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+.orange {
+  color: orange;
+  margin-right: 1rem;
+}
+
+@media (min-width: 992px) {
+  .nav_container {
+    padding: 1rem 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav_container {
+    gap: 40px;
+  }
+  .nav_container ul {
+    /* flex-direction: column; */
+    gap: 0.5rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .auth_container {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .nav_container button {
+    width: 100%;
+    text-align: left;
+  }
+
+  .buttons button {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav_container h1 {
+    font-size: 1.25rem;
+  }
+
+  .nav_container h2 {
+    font-size: 0.875rem;
+  }
+
+  .nav_container ul {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .nav_container button {
+    padding: 0.5rem;
+    font-size: 0.875rem;
+  }
+}
